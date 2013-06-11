@@ -10,17 +10,14 @@
             $.mobile.listview.prototype._create.call(this);
 
             //now add our enhancements after
-            this.refresh(true);
+            this.refresh();
         },
 
         refresh: function (create) {
             var $list = this.element;
 
-            //if we are called from create, don't recall super.refresh
-            //it is already called from listview.prototype._create
-            if (!create) {
-                $.mobile.listview.prototype.refresh.call(this, create);
-            }
+            //call listview('refresh')
+            $.mobile.listview.prototype.refresh.call(this, create);
 
             //set up each inline button
             $list.find(':jqmData(rel="inline")').each(function (idx, element) {
