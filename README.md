@@ -1,6 +1,8 @@
 inlinelistview
 ==============
 
+##[DEMO](http://alspringer.github.io/)
+
 A listview for jQuery Mobile where items can be opened inline.
 
 To use:
