@@ -35,6 +35,7 @@ And one with 4 menu items, two of which open inline on the same page.
 ```
 
 ###What code is needed for this second example to open these two items inline?
+First of all, declare the listview as `<ul data-role="inlinelistview">` instead of `<ul data-role="listview">`.
 
 ####For the menu items
 The menu items that are to be opened inline include a `data-rel="inline"` attribute. 
